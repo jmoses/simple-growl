@@ -1,0 +1,12 @@
+# SimpleGrowl
+
+SimpleGrowl is a simple (duh) wrapper around RubyGrowl.  I _always_ for get the Growl syntax, and just want the pretty notifications.  So I use this.
+
+Example:
+
+ require 'rubygems'
+ require 'ruby-growl'
+ require 'simplegrowl'
+ 
+ SimpleGrowl.set_password('password') ## If there's a password.  SG communicates over TCP to the local host
+ SimpleGrowl.notify("That's it!")
